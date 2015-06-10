@@ -1,0 +1,9 @@
+<section>
+    {{#each spent in model}}
+        <div style="border: solid 1px #000000; width: 10%; padding: 15px;">
+          <div>Date: {{spent.date}}</div>
+          <div>Item: {{spent.item}}</div>
+          <div>Value: US$ {{spent.value}}</div>
+        </div>
+    {{/each}}
+</section>
