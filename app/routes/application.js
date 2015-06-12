@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     actions: {
-        sayHello: function(){
-            alert('say hello Application Route');
+        sayHello: function(date){
+            alert('say hello Application Route - Date - ' + date);
         }
     }
 });

@@ -6,7 +6,7 @@
             <div class={{class}}>Month: {{model.month}}</div>
         {{/unless}}
         <div class={{class}}>Value: US$ {{model.value}}</div>
-        <div {{action 'sayHello'}} class="clickable {{class}}">Days behind: {{model.daysBehind}}</div>
+        <div {{action 'sayHello' model.date}} class="clickable {{class}}">Days behind: {{model.daysBehind}}</div>
     </div>
 </section>
 

@@ -11,8 +11,8 @@ export default Ember.ObjectController.extend({
             this.set('class', 'hide');
         }
     },
-    sayHello: function(){
-        alert('say hello Controller');
+    sayHello: function(date){
+        alert('say hello Controller - Date - ' + date);
         return true;
     }
   }

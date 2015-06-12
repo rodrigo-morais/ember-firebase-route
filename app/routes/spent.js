@@ -5,8 +5,8 @@ export default Ember.Route.extend({
         return this.store.find('spending', params.spent_id);
     },
     actions: {
-        sayHello: function(){
-            alert('say hello Route');
+        sayHello: function(date){
+            alert('say hello Route - Date - ' + date);
             return true;
         }
     }
