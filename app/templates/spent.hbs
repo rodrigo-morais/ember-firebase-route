@@ -1,12 +1,12 @@
 <section>
     <div class="spending">
-        <div>Date: {{model.date}}</div>
+        <h3 class="title" {{action 'alert'}}>Item: {{model.item}}</h3>
+        <div class={{class}}>Date: {{model.date}}</div>
         {{# unless model.actualMonth}}
-            <div>Month: {{model.month}}</div>
+            <div class={{class}}>Month: {{model.month}}</div>
         {{/unless}}
-        <div>Item: {{model.item}}</div>
-        <div>Value: US$ {{model.value}}</div>
-        <div>Days behind: {{model.daysBehind}}</div>
+        <div class={{class}}>Value: US$ {{model.value}}</div>
+        <div class={{class}}>Days behind: {{model.daysBehind}}</div>
     </div>
 </section>
 

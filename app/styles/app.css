@@ -11,3 +11,18 @@ a
     text-decoration: none;
     color: #000000;
 }
+
+.title
+{
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
+
+.show
+{
+    display: block;
+}
