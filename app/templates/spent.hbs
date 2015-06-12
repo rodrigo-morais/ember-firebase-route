@@ -1,9 +1,12 @@
 <section>
     <div class="spending">
         <div>Date: {{model.date}}</div>
-        <div>Month: {{model.month}}</div>
+        {{# unless model.actualMonth}}
+            <div>Month: {{model.month}}</div>
+        {{/unless}}
         <div>Item: {{model.item}}</div>
         <div>Value: US$ {{model.value}}</div>
+        <div>Days behind: {{model.daysBehind}}</div>
     </div>
 </section>
 
