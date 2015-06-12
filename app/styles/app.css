@@ -12,7 +12,7 @@ a
     color: #000000;
 }
 
-.title
+.clickable
 {
     cursor: pointer;
 }

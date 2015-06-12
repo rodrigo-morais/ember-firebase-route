@@ -10,6 +10,10 @@ export default Ember.ObjectController.extend({
         else{
             this.set('class', 'hide');
         }
-    }  
+    },
+    sayHello: function(){
+        alert('say hello Controller');
+        return true;
+    }
   }
 });
