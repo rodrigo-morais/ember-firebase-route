@@ -1,11 +1,11 @@
 <section>
     {{#each spent in model}}
         {{#link-to 'spent' spent}}
+          {{partial "spender"}}
+        {{/link-to}}
         <div class="spending">
           <div>Date: {{spent.date}}</div>
-          <div>Item: {{spent.item}}</div>
           <div>Value: US$ {{spent.value}}</div>
         </div>
-        {{/link-to}}
     {{/each}}
 </section>
