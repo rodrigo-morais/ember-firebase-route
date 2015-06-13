@@ -2,6 +2,7 @@
     {{#each spent in model}}
         {{#link-to 'spent' spent}}
           {{partial "spender"}}
+          {{view "spender" name=spent.item}}
         {{/link-to}}
         <div class="spending">
           <div>Date: {{spent.date}}</div>
