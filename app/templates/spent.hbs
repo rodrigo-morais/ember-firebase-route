@@ -1,6 +1,7 @@
 <section>
     <div class="spending">
         <h3 class="clickable" {{action 'alert'}}>Item: {{model.item}}</h3>
+        {{view "spentvw" name=spent.item}}
         <div class={{class}}>Date: {{model.date}}</div>
         {{# unless model.actualMonth}}
             <div class={{class}}>Month: {{model.month}}</div>
