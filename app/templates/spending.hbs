@@ -1,9 +1,11 @@
 <section>
+    {{render "spenderrendervw"}}
     {{#each spent in model}}
         {{#link-to 'spent' spent}}
           {{partial "spender"}}
           {{view "spender" name=spent.item}}
           {{view "spendervw" content=spent}}
+          {{render "spenderrender" spent}}
         {{/link-to}}
         <div class="spending">
           <div>Date: {{spent.date}}</div>
