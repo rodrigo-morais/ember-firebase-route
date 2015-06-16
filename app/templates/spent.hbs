@@ -8,6 +8,7 @@
         {{/unless}}
         <div class={{class}}>Value: US$ {{model.value}}</div>
         <div {{action 'sayHello' model.date}} class="clickable {{class}}">Days behind: {{model.daysBehind}}</div>
+        {{spent-value model 'test'}}
     </div>
 </section>
 
